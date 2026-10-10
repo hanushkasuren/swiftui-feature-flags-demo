@@ -11,7 +11,6 @@ import Observation
 @MainActor
 @Observable
 final class FeatureFlags {
-
     private var values: [String: Bool]
     private let storage: UserDefaults?
     private static let storageKey = "featureFlags.lastKnownValues"

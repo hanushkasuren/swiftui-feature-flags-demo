@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CheckoutView: View {
-
     @Environment(FeatureFlags.self) private var flags
 
     var body: some View {

@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct FeatureFlagsDemoApp: App {
-
     @Environment(\.scenePhase) private var scenePhase
     @State private var flags = FeatureFlags(storage: .standard)
+    
     private let source = RemoteFlagSource(url: URL(string: "https://raw.githubusercontent.com/hanushkasuren/swiftui-feature-flags-demo/main/flags.json")!)
 
     var body: some Scene {
