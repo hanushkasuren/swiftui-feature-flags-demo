@@ -19,23 +19,9 @@ One checkout screen with two feature flags. A promo banner that is on by default
 
 ## Run it
 
-This project is set up for XcodeGen, a tool that turns a plain YAML file into a real Xcode project.
-
-1. Install XcodeGen once, with Homebrew.
-
-   brew install xcodegen
-
-2. From this folder, generate the project.
-
-   xcodegen generate
-
-3. Open it.
-
-   open FeatureFlagsDemo.xcodeproj
-
-4. Pick an iPhone simulator and run. Run the tests with Cmd+U.
-
-If you would rather not install XcodeGen, create a new Xcode project named FeatureFlagsDemo, iOS App, SwiftUI, Swift, with Swift Testing as the testing system. Delete its generated ContentView.swift, FeatureFlagsDemoApp.swift and test file, then add Sources/FeatureFlagsDemo to the app target and Tests/FeatureFlagsDemoTests to the test target. Set the deployment target to iOS 17.
+1. Clone the repo and open `FeatureFlagsDemo.xcodeproj`.
+2. Pick an iPhone simulator and run with Cmd+R.
+3. Run the tests with Cmd+U.
 
 On the very first launch with no network you will see the defaults, the yellow banner and "Go to checkout". Once `flags.json` loads, the banner disappears and the button changes to "Pay with one tap".
 
